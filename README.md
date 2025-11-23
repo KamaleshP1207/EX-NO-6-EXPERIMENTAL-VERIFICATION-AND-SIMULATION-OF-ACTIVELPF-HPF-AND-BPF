@@ -1,17 +1,16 @@
 # EX-NO-6-EXPERIMENTAL-VERIFICATION-AND-SIMULATION-OF-ACTIVELPF-HPF-AND-BPF
 ## 6 DESIGN OF ACTIVE LOW PASS, HIGH PASS AND BAND PASS FILTERS USING OP-AMP
             
-**DATE:**  
-         
+DATE:A.27/09/2025,B.04/10/2025,C.11/10/2025  
+SLOT: 5M1-1         
 ---
 
-## AIM
-            
-**DATE:**  
-         
----
 
-## AIM and obtain the frequency response of
+
+
+ AIM:
+
+obtain the frequency response of
 
 i)	First order Low Pass Filter (LPF)
 ii)	First order High Pass Filter (HPF)
@@ -24,7 +23,7 @@ iii)	Band pass filter
 
 
 ## THEORY
-## LOW PASS FILTER
+
 A LPF allows frequencies from 0 to higher cut of frequency, fH. At fH the gain is 0.707 Amax, and after fH gain decreases at a constant rate with an increase in frequency. The gain decreases 20dB each time the frequency is increased by 10. Hence the rate at which the gain rolls off after fH is 20dB/decade or 6 dB/ octave, where octave signifies a two fold increase in frequency. The frequency f=fH is called the cut off frequency because the gain of the filter at this frequency is down by 3 dB from 0 Hz. Other equivalent terms for cut-off frequency are -3dB frequency, break frequency, or corner frequency.
 ## APPARATUS REQUIRED
 
@@ -35,12 +34,17 @@ A LPF allows frequencies from 0 to higher cut of frequency, fH. At fH the gain i
 | 3 | Dual RPS | (0 – 30) V | 1 |
 | 4 | Op-Amp | µA741 | 2 |
 | 5 | Bread Board | — | 1 |
-| 6 | Resistors | 1.6K,10K,0.1 µF | 1 |
-| 7 | Connecting wires and probes | As required | — |
+| 6 | Resistors | 1.6K,10K,5.86K | 1 |
+| 7 | Capacitor | 0.01uf | 3 |
+| 8 | Connecting wires and probes | As required | — |
 
 ---
 ## CIRCUIT DIAGRAM
-<img width="836" height="455" alt="image" src="https://github.com/user-attachments/assets/e5181151-836f-4f80-8f56-53b23ff05c74" />
+![WhatsApp Image 2025-11-23 at 20 08 12_60b59fed](https://github.com/user-attachments/assets/0a8729fe-d562-448f-92ae-d7eaff150ad1)
+
+
+SIMULATION CIRCUIT DIAGRAM:
+<img width="823" height="467" alt="image" src="https://github.com/user-attachments/assets/44fe1f44-de5b-4704-ba63-931f22cad4ce" />
 
 
 ## MODEL GRAPH
@@ -50,7 +54,7 @@ A LPF allows frequencies from 0 to higher cut of frequency, fH. At fH the gain i
 
 ## DESIGN
 
-Given: fH = 1 KHz = 1/ (2πRC) Let C = 0.1 µF, R = 1.6 KΩ
+Given: fH = 1 KHz = 1/ (2πRC) Let C = 0.01 µF, R = 1.6 KΩ
 For n = 2, α (damping factor) = 1.414, Passband gain = Ao = 3 - α =3 – 1.414 = 1.586.
 Transfer function of second order butterworth LPF as:
 1.586
@@ -75,26 +79,16 @@ PROCEDURE - (LPF):
 
 
 ## TABULATION
-
-| S.No | Frequency (Hz) | Output Voltage (V) | Gain = 20 log (Vo/Vi) (dB) |
-|------|----------------|--------------------|-----------------------------|
-| 1    |                |                    |                             |
-| 2    |                |                    |                             |
-| 3    |                |                    |                             |
-| 4    |                |                    |                             |
-| 5    |                |                    |                             |
-| 6    |                |                    |                             |
-| 7    |                |                    |                             |
-| 8    |                |                    |                             |
-| 9    |                |                    |                             |
-| 10   |                |                    |                             |
-| 11   |                |                    |                             |
-| 12   |                |                    |                             |
-		
+![WhatsApp Image 2025-11-23 at 20 08 18_955c0013](https://github.com/user-attachments/assets/5a7287d0-cb9e-470e-8d56-2b2095ece47a)
 
 ---
 
 ## OUT PUT WAVEFORM AND DISCUSSION 
+![WhatsApp Image 2025-11-23 at 20 08 18_0c177af0](https://github.com/user-attachments/assets/4be40481-effb-48e1-bf32-1612820b2527)
+
+## SIMULATION OUTPUT :
+
+<img width="821" height="457" alt="image" src="https://github.com/user-attachments/assets/cc7ef036-9419-4f21-a5ac-2a0b6d856bb4" />
 
 ---
 
@@ -116,13 +110,17 @@ A HPF allows frequencies from 0 to higher cut of frequency, fH. At fH the gain i
 | 3 | Dual RPS | (0 – 30) V | 1 |
 | 4 | Op-Amp | µA741 | 2 |
 | 5 | Bread Board | — | 1 |
-| 6 | Resistors | 1.6K,10K,5.86K, 0.1 µF | 1 |
+| 6 | Resistors | 1.6K,10K,5.86K | 1 |
+| 7 | Capacitor | 0.01uF | 1 |
 | 7 | Connecting wires and probes | As required | — |
 
 
 ## CIRCUIT DIAGRAM
 
-<img width="887" height="486" alt="image" src="https://github.com/user-attachments/assets/907a1395-28d4-406f-ac09-96c4e060587e" />
+<![WhatsApp Image 2025-11-23 at 20 16 20_0d2ca4ac](https://github.com/user-attachments/assets/b8d1ff10-78d0-42b0-b84b-17bd09dbcfb0)
+
+SIMULATION CIRCUIT DIAGRAM:
+<img width="826" height="469" alt="image" src="https://github.com/user-attachments/assets/f0c5665c-c903-4dbb-a6ac-41afb6d9ebe0" />
 
 
 ## MODEL GRAPH
@@ -160,26 +158,18 @@ PROCEDURE - ( HPF):
 ## TABULATION
 
 		
-| S.No | Frequency (Hz) | Output Voltage (V) | Gain = 20 log (Vo/Vi) (dB) |
-|------|----------------|--------------------|-----------------------------|
-| 1    |                |                    |                             |
-| 2    |                |                    |                             |
-| 3    |                |                    |                             |
-| 4    |                |                    |                             |
-| 5    |                |                    |                             |
-| 6    |                |                    |                             |
-| 7    |                |                    |                             |
-| 8    |                |                    |                             |
-| 9    |                |                    |                             |
-| 10   |                |                    |                             |
-| 11   |                |                    |                             |
-| 12   |                |                    |                             |
+![WhatsApp Image 2025-11-23 at 20 16 20_52cb3a2b](https://github.com/user-attachments/assets/910d7a5d-3a0a-454b-97cc-604a171f65cd)
 
 ---
 
 ## OUT PUT WAVEFORM AND DISCUSSION 
+![WhatsApp Image 2025-11-23 at 20 16 37_73f2c0b8](https://github.com/user-attachments/assets/91c423f5-5e59-4690-b557-4a7ecb15b7b5)
+
 
 ---
+### SIMULATION OUTPUT: 
+<img width="824" height="462" alt="image" src="https://github.com/user-attachments/assets/1d7c6861-3579-4e1a-9e05-87fe69457963" />
+
 
  ## 6C Band Pass Filter
 
@@ -199,13 +189,19 @@ A BPF allows frequencies in between lower cut of frequency and higher cut of fre
 | 3 | Dual RPS | (0 – 30) V | 1 |
 | 4 | Op-Amp | µA741 | 2 |
 | 5 | Bread Board | — | 1 |
-| 6 | Resistors |10K,38.8K,7.9K,0.01uf | 1 |
+| 6 | Resistors |10K,38.8K,7.9K | 1 |
+| 7 | Capacitor | 0.1uF | 1 |
 | 7 | Connecting ires and probes | As required | — |
 
 
 ## CIRCUIT DIAGRAM
 
-<img width="1068" height="446" alt="image" src="https://github.com/user-attachments/assets/ee37b95a-05ea-448c-9102-111e071e41e8" />
+![WhatsApp Image 2025-11-23 at 20 23 52_4d884a4f](https://github.com/user-attachments/assets/baa48cfc-a854-4e5a-a073-42cf619d75c3)
+
+
+SIMULATION CIRCUIT DIAGRAM:
+<img width="820" height="430" alt="image" src="https://github.com/user-attachments/assets/ab8591ed-9cc4-4908-a4bd-e64a722c73e6" />
+
 
 ## MODEL GRAPH
 
@@ -245,26 +241,20 @@ PROCEDURE:BAND PASS FILTER
 ## TABULATION
 
 		
-| S.No | Frequency (Hz) | Output Voltage (V) | Gain = 20 log (Vo/Vi) (dB) |
-|------|----------------|--------------------|-----------------------------|
-| 1    |                |                    |                             |
-| 2    |                |                    |                             |
-| 3    |                |                    |                             |
-| 4    |                |                    |                             |
-| 5    |                |                    |                             |
-| 6    |                |                    |                             |
-| 7    |                |                    |                             |
-| 8    |                |                    |                             |
-| 9    |                |                    |                             |
-| 10   |                |                    |                             |
-| 11   |                |                    |                             |
-| 12   |                |                    |                             |
+![WhatsApp Image 2025-11-23 at 20 23 54_6256cdff](https://github.com/user-attachments/assets/e429de5e-9fd2-4453-b82a-deb6b7986b74)
+![WhatsApp Image 2025-11-23 at 20 23 55_51fb33c4](https://github.com/user-attachments/assets/6d620b6f-d4df-424a-8506-9950054ccf62)
 
 ---
 
 ## OUT PUT WAVEFORM AND DISCUSSION 
+![WhatsApp Image 2025-11-23 at 20 23 55_6f28bf1d](https://github.com/user-attachments/assets/a61b158c-49b5-4988-9382-3b8ab2c60331)
+
 
 ---
+SIMULATION OUTPUT:
+<img width="821" height="365" alt="image" src="https://github.com/user-attachments/assets/c7e06b68-df3f-43a3-8ba0-abe81f78eecd" />
+
+
 ##RESULT:
 	Thus an Active Low pass, High pass and Band Pass Filters are designed and
 tested using op-amp IC 741.
