@@ -253,6 +253,8 @@ PROCEDURE:BAND PASS FILTER
 ---
 SIMULATION OUTPUT:
 <img width="821" height="365" alt="image" src="https://github.com/user-attachments/assets/c7e06b68-df3f-43a3-8ba0-abe81f78eecd" />
+##DESIGN
+![WhatsApp Image 2025-12-04 at 12 32 32_4c33da51](https://github.com/user-attachments/assets/b6cd99a3-fbd4-4283-b222-d1650b7b7252)
 
 
 ##RESULT:
